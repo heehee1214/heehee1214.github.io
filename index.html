@@ -10,108 +10,163 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="heehee1214 home">heehee1214</a>
+  <div class="site-shell">
+    <header class="masthead">
+      <div class="welcome-bubble">
+        <span class="bubble-label">Welcome</span>
+        <strong>heehee1214.github.io</strong>
+      </div>
+      <div class="status-panel" aria-label="Site status">
+        <span>GitHub Pages</span>
+        <span>Static HTML</span>
+      </div>
+    </header>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a class="logo-pill" href="#top" aria-label="heehee1214 home">heehee1214</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#resume">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="utility-links" aria-label="Utility links">
+        <a href="assets/cv.pdf">CV PDF</a>
+        <a href="https://github.com/heehee1214">GitHub</a>
+      </div>
     </nav>
-  </header>
 
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="intro-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Personal Website</p>
-        <h1 id="intro-title">Hi, I am heehee1214.</h1>
-        <p class="lead">
-          I am building my foundation in computer programming through practical
-          coursework, small web projects, and steady experimentation.
-        </p>
-        <div class="hero-actions" aria-label="Profile actions">
-          <a class="button primary" href="#projects">View Projects</a>
-          <a class="button secondary" href="assets/cv.pdf">Download CV</a>
+    <nav class="subnav" aria-label="Secondary navigation">
+      <a href="#about">Coursework</a>
+      <a href="#projects">Web Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Online Profile</a>
+    </nav>
+
+    <main id="main">
+      <section class="hero-panel" id="top" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="panel-kicker">Student Web Console</p>
+          <h1 id="intro-title">heehee1214</h1>
+          <p class="hero-tagline">
+            Computer programming notes, small web builds, and coursework
+            experiments in one compact personal page.
+          </p>
+          <a class="hero-arrow" href="#about" aria-label="Go to About section">&gt;</a>
         </div>
-      </div>
-      <img
-        class="profile-image"
-        src="assets/profile.jpg"
-        alt="Portrait of heehee1214"
-        width="600"
-        height="600"
-      >
-    </section>
+        <div class="profile-port">
+          <img
+            class="profile-image"
+            src="assets/profile.jpg"
+            alt="Portrait of heehee1214"
+            width="600"
+            height="600"
+          >
+        </div>
+      </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">Curious, practical, and always learning.</h2>
-      </div>
-      <p>
-        This page is a simple home for my programming work, learning notes, and
-        academic materials. I enjoy turning ideas into working pages and using
-        each project to practice cleaner structure, readable code, and accessible
-        design.
-      </p>
-    </section>
+      <div class="content-layout">
+        <aside class="left-tabs" aria-label="Quick section links">
+          <a href="#about">Top</a>
+          <a href="#projects">Work</a>
+          <a href="#resume">CV</a>
+          <a href="#contact">Link</a>
+        </aside>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2 id="projects-title">Selected work</h2>
+        <div class="main-column">
+          <section class="chrome-panel" id="about" aria-labelledby="about-title">
+            <h2 id="about-title" class="panel-title">About Me</h2>
+            <div class="panel-body">
+              <p>
+                I am building my foundation in computer programming through
+                practical coursework, small web projects, and steady
+                experimentation.
+              </p>
+              <p>
+                This website keeps my learning work in one place while
+                practicing semantic HTML, readable CSS, and accessible static
+                page design.
+              </p>
+            </div>
+          </section>
+
+          <section class="chrome-panel" id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title" class="panel-title">Selected Work</h2>
+            <div class="panel-list">
+              <article class="news-row">
+                <div>
+                  <h3>Personal Website</h3>
+                  <p>A responsive GitHub Pages site built with semantic HTML and CSS.</p>
+                </div>
+                <span class="arrow-chip" aria-hidden="true">&gt;</span>
+              </article>
+              <article class="news-row">
+                <div>
+                  <h3>Programming Coursework</h3>
+                  <p>Small assignments focused on fundamentals, structure, and problem solving.</p>
+                </div>
+                <span class="arrow-chip" aria-hidden="true">&gt;</span>
+              </article>
+              <article class="news-row">
+                <div>
+                  <h3>Learning Notes</h3>
+                  <p>Notes from practice sessions, debugging, and project ideas.</p>
+                </div>
+                <span class="arrow-chip" aria-hidden="true">&gt;</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="chrome-panel" id="resume" aria-labelledby="resume-title">
+            <h2 id="resume-title" class="panel-title">Resume / CV</h2>
+            <div class="resume-card">
+              <div>
+                <h3>CV PDF</h3>
+                <p>Open the latest CV as a local PDF file from the assets folder.</p>
+              </div>
+              <a class="button-submit" href="assets/cv.pdf">Open CV PDF</a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="right-rail" aria-label="Profile actions and details">
+          <a class="rail-button" href="assets/cv.pdf">Download CV</a>
+          <a class="rail-button" href="https://github.com/heehee1214">View GitHub</a>
+          <a class="rail-button" href="#contact">Contact Info</a>
+
+          <section class="info-box" aria-labelledby="info-title">
+            <h2 id="info-title">What Is This?</h2>
+            <p>
+              A compact personal homepage styled like an early-2000s console
+              interface: metal plates, hard bevels, dark command bars, and
+              orange action cues.
+            </p>
+          </section>
+
+          <section class="promo-card" aria-labelledby="promo-title">
+            <p class="panel-kicker">Now Loading</p>
+            <h2 id="promo-title">Coursework Archive</h2>
+            <p>More small programming projects can be added here as they grow.</p>
+          </section>
+        </aside>
       </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Personal Website</h3>
+
+      <section class="chrome-panel contact-panel" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="panel-title">Contact</h2>
+        <div class="contact-row">
           <p>
-            A responsive GitHub Pages site built with semantic HTML and CSS.
+            Follow along through my GitHub profile as this page develops with
+            new projects and notes.
           </p>
-        </article>
-        <article class="project-card">
-          <h3>Programming Coursework</h3>
-          <p>
-            Small assignments and experiments focused on problem solving,
-            structure, and fundamentals.
-          </p>
-        </article>
-        <article class="project-card">
-          <h3>Learning Notes</h3>
-          <p>
-            Ongoing notes from practice sessions, debugging, and project ideas.
-          </p>
-        </article>
-      </div>
-    </section>
+          <a class="text-link" href="https://github.com/heehee1214">github.com/heehee1214</a>
+        </div>
+      </section>
+    </main>
 
-    <section class="section resume-section" id="resume" aria-labelledby="resume-title">
-      <div>
-        <p class="eyebrow">Resume</p>
-        <h2 id="resume-title">CV</h2>
-        <p>
-          My CV is available as a PDF for quick viewing or download.
-        </p>
-      </div>
-      <a class="button primary" href="assets/cv.pdf">Open CV PDF</a>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Find me online</h2>
-      </div>
-      <p>
-        You can connect through my GitHub profile and follow along as this page
-        grows with new projects.
-      </p>
-      <a class="text-link" href="https://github.com/heehee1214">github.com/heehee1214</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 heehee1214. Built for GitHub Pages.</p>
-  </footer>
+    <footer class="site-footer">
+      <span class="esrb-badge">Static Site</span>
+      <p>&copy; 2026 heehee1214. Built for GitHub Pages.</p>
+    </footer>
+  </div>
 </body>
 </html>
