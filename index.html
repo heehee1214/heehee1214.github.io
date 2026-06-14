@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1> Welcome to my Personal Page </h1>
-        <p> Hosted on Github Pages! </p>
-    </body>
-    <body>
-        <h1> 고양이유나 조아 흐흐 </h1>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website for heehee1214, featuring a short profile, projects, and CV.">
+  <title>heehee1214 | Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="heehee1214 home">heehee1214</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal Website</p>
+        <h1 id="intro-title">Hi, I am heehee1214.</h1>
+        <p class="lead">
+          I am building my foundation in computer programming through practical
+          coursework, small web projects, and steady experimentation.
+        </p>
+        <div class="hero-actions" aria-label="Profile actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="assets/cv.pdf">Download CV</a>
+        </div>
+      </div>
+      <img
+        class="profile-image"
+        src="assets/profile.jpg"
+        alt="Portrait of heehee1214"
+        width="600"
+        height="600"
+      >
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Curious, practical, and always learning.</h2>
+      </div>
+      <p>
+        This page is a simple home for my programming work, learning notes, and
+        academic materials. I enjoy turning ideas into working pages and using
+        each project to practice cleaner structure, readable code, and accessible
+        design.
+      </p>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2 id="projects-title">Selected work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Personal Website</h3>
+          <p>
+            A responsive GitHub Pages site built with semantic HTML and CSS.
+          </p>
+        </article>
+        <article class="project-card">
+          <h3>Programming Coursework</h3>
+          <p>
+            Small assignments and experiments focused on problem solving,
+            structure, and fundamentals.
+          </p>
+        </article>
+        <article class="project-card">
+          <h3>Learning Notes</h3>
+          <p>
+            Ongoing notes from practice sessions, debugging, and project ideas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section resume-section" id="resume" aria-labelledby="resume-title">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2 id="resume-title">CV</h2>
+        <p>
+          My CV is available as a PDF for quick viewing or download.
+        </p>
+      </div>
+      <a class="button primary" href="assets/cv.pdf">Open CV PDF</a>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Find me online</h2>
+      </div>
+      <p>
+        You can connect through my GitHub profile and follow along as this page
+        grows with new projects.
+      </p>
+      <a class="text-link" href="https://github.com/heehee1214">github.com/heehee1214</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 heehee1214. Built for GitHub Pages.</p>
+  </footer>
+</body>
 </html>
