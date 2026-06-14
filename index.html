@@ -85,7 +85,13 @@
                 <strong>Major:</strong> CSE
               </p>
               <p>
-                <strong>Self-introduction:</strong> i luv cat
+                <strong>Self-introduction:</strong>
+                <span id="self-intro-text">i luv
+                  <span
+                    class="easter-egg-word"
+                    id="cat-easter-egg"
+                  >cat</span>
+                </span>
               </p>
             </div>
           </section>
@@ -197,5 +203,15 @@
       <p>&copy; 2026 heehee1214. Built for GitHub Pages.</p>
     </footer>
   </div>
+  <script>
+    const introText = document.getElementById("self-intro-text");
+    const catTrigger = document.getElementById("cat-easter-egg");
+
+    function revealEasterEgg() {
+      introText.textContent = "i luv Yuna1214";
+    }
+
+    catTrigger.addEventListener("dblclick", revealEasterEgg);
+  </script>
 </body>
 </html>

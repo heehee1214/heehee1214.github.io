@@ -554,6 +554,19 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.easter-egg-word {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: default;
+  font: inherit;
+  font-weight: inherit;
+  min-height: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
 .site-footer {
   align-items: center;
   background:
