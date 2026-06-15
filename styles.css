@@ -354,6 +354,10 @@ h1 {
   width: 178px;
 }
 
+.profile-port.is-reset-target {
+  cursor: pointer;
+}
+
 .content-layout {
   display: grid;
   gap: 8px;

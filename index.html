@@ -56,9 +56,10 @@
           </p>
           <a class="hero-arrow" href="#about" aria-label="Go to About section">&gt;</a>
         </div>
-        <div class="profile-port">
+        <div class="profile-port" id="profile-reset-target">
           <img
             class="profile-image"
+            id="profile-image"
             src="assets/profile.jpg"
             alt="Portrait of heehee1214"
             width="600"
@@ -81,7 +82,7 @@
             <h2 id="about-title" class="panel-title">About Me</h2>
             <div class="panel-body">
               <p>
-                <strong>Name:</strong> heehee<br>
+                <strong>Name:</strong> <span id="profile-name">heehee</span><br>
                 <strong>Major:</strong> CSE
               </p>
               <p>
@@ -204,14 +205,51 @@
     </footer>
   </div>
   <script>
-    const introText = document.getElementById("self-intro-text");
     const catTrigger = document.getElementById("cat-easter-egg");
+    const profileImage = document.getElementById("profile-image");
+    const profileName = document.getElementById("profile-name");
+    const profileResetTarget = document.getElementById("profile-reset-target");
+    let easterEggActive = false;
+    let profileClickCount = 0;
+    let profileClickTimer;
 
     function revealEasterEgg() {
-      introText.textContent = "i luv Yuna1214";
+      catTrigger.textContent = "Yuna1214";
+      profileName.textContent = "Heejae";
+      profileImage.src = "assets/hidden_profile.jpg";
+      profileImage.alt = "Hidden portrait of Heejae";
+      profileResetTarget.classList.add("is-reset-target");
+      easterEggActive = true;
+      profileClickCount = 0;
+    }
+
+    function resetEasterEgg() {
+      catTrigger.textContent = "cat";
+      profileName.textContent = "heehee";
+      profileImage.src = "assets/profile.jpg";
+      profileImage.alt = "Portrait of heehee1214";
+      profileResetTarget.classList.remove("is-reset-target");
+      easterEggActive = false;
+      profileClickCount = 0;
+      window.clearTimeout(profileClickTimer);
     }
 
     catTrigger.addEventListener("dblclick", revealEasterEgg);
+    profileResetTarget.addEventListener("click", () => {
+      if (!easterEggActive) {
+        return;
+      }
+
+      profileClickCount += 1;
+      window.clearTimeout(profileClickTimer);
+      profileClickTimer = window.setTimeout(() => {
+        profileClickCount = 0;
+      }, 1400);
+
+      if (profileClickCount >= 3) {
+        resetEasterEgg();
+      }
+    });
   </script>
 </body>
 </html>
